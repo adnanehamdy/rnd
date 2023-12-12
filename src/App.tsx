@@ -46,6 +46,7 @@ for (let id: number = 0; id < 4; id++) {
   }, [boxes]);
 
   const handleBoxDragStop = (index: number, d: { x: number; y: number }) => {
+    console.log(`Box ${index} dragged to x: ${d.x}, y: ${d.y}`);
     setBoxes((prevBoxes) => {
       const updatedBoxes = [...prevBoxes];
       updatedBoxes[index].position = { x: d.x, y: d.y };
@@ -54,6 +55,7 @@ for (let id: number = 0; id < 4; id++) {
   };
 
   const handleBoxResize = (index: number, newSize: Size) => {
+    console.log(`Box ${index} resized to width: ${newSize.width}, height: ${newSize.height}`);
     setBoxes((prevBoxes) => {
       const updatedBoxes = [...prevBoxes];
       updatedBoxes[index].size = newSize;

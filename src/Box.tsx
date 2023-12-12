@@ -1,4 +1,3 @@
-// Box.tsx
 import { Rnd } from 'react-rnd';
 
 interface Axis {
