@@ -1,5 +1,4 @@
 // Box.tsx
-import React, { useState } from 'react';
 import { Rnd } from 'react-rnd';
 
 interface Axis {
